@@ -6,29 +6,30 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #f1f8f3;
     color: #333;
     padding: 20px;
 }
 
 .container {
-    max-width: 650px;
-    background-color: #fff;
+    max-width: 700px;
+    background-color: white;
     margin: 30px auto;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #22a447;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #1e293b;
+    color: #166534;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
     margin-bottom: 25px;
 }
@@ -39,40 +40,47 @@ form {
     gap: 5px;
 }
 
+form .form-group:nth-child(n+4),
+form button {
+    grid-column: 1 / 4;
+}
+
 label {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+    color: #166534;
 }
 
 input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
     font-size: 16px;
+    width: 100%;
+    height: 45px;
 }
 
 input:focus {
     outline: none;
-    border-color: #2563ab;
+    border-color: #22a447;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 12px 15px;
     font-size: 15px;
     font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s;
 }
 
 .btn-primary {
-    background-color: #2563ab;
+    background-color: #22a447;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #1d4ed8;
+    background-color: #198638;
 }
 
 .btn-danger {
@@ -89,13 +97,15 @@ button {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-    padding-top: 10px;
-    border-top: 2px solid #e2e8f0;
+    padding: 12px;
+    background-color: #f1f8f3;
+    border: 1px solid #d1e7d6;
 }
 
 #total-estoque {
     font-size: 18px;
-    color: #0f172a;
+    font-weight: bold;
+    color: #166534;
 }
 
 table {
@@ -106,18 +116,22 @@ table {
 
 th,
 td {
-    border: 1px solid #cbd5e1;
+    border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background-color: #2563ab;
+    background-color: #22a447;
     color: white;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f8fafc;
+    background-color: #f1f8f3;
+}
+
+tbody tr:hover {
+    background-color: #e2f3e7;
 }
 
 .btn-remover {
@@ -129,4 +143,26 @@ tbody tr:nth-child(even) {
 
 .btn-remover:hover {
     background-color: #dc2626;
+}
+
+.autor {
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 25px;
+    border-top: 1px solid #d1e7d6;
+}
+
+.autor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #22a447;
+}
+
+.autor p {
+    margin-top: 12px;
+    color: #166534;
+    font-weight: bold;
+    font-size: 16px;
 }
