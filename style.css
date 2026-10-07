@@ -1,10 +1,10 @@
 :root {
-    --cor-primaria: #2563eb;
-    --cor-primaria-hover: #1d4ed8;
-    --cor-escura: #1e3a8a;
-    --cor-fundo: #eff6ff;
-    --cor-borda-suave: #bfdbfe;
-    --cor-linha-hover: #dbeafe;
+    --cor-primaria: #4f46e5;
+    --cor-primaria-hover: #4338ca;
+    --cor-escura: #312e81;
+    --cor-fundo: #eef2ff;
+    --cor-borda-suave: #c7d2fe;
+    --cor-linha-hover: #e0e7ff;
 }
 
 * {
@@ -93,12 +93,12 @@ button {
 }
 
 .btn-danger {
-    background-color: #dc2626;
+    background-color: #475569;
     color: white;
 }
 
 .btn-danger:hover {
-    background-color: #b91c1c;
+    background-color: #334155;
 }
 
 .resumo-container {
@@ -144,14 +144,14 @@ tbody tr:hover {
 }
 
 .btn-remover {
-    background-color: #ef4444;
+    background-color: #64748b;
     color: white;
     padding: 5px 10px;
     font-size: 12px;
 }
 
 .btn-remover:hover {
-    background-color: #dc2626;
+    background-color: #475569;
 }
 
 .autor {
